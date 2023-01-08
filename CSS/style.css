@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+#launch{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#texte{
+    text-align: center;
+    width: 100%;
+}
+
+#texte2{
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+button{
+    width: 40%;
+    font-size: 2vw;
+    padding: 5%;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+button:hover{
+    cursor : pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.change_color{
+    animation: rainbow 1s;
+}
+
+@keyframes rainbow {
+    5%{
+        border-color: rgb(140, 0, 0);
+    }
+
+    20%{
+        border-color: rgb(139, 90, 0);
+    }
+
+    35%{
+        border-color: rgb(142, 142, 0);
+    }
+
+    50%{
+        border-color: rgb(0, 80, 0);
+    }
+
+    65%{
+        border-color: rgb(0, 0, 120);
+    }
+
+    80%{
+        border-color: rgb(59, 0, 100);
+    }
+
+    95%{
+        border-color: rgb(125, 60, 125);
+    }
+}
+
+.bigger{
+    animation: bigger 2s;
+}
+
+@keyframes bigger {
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.twist{
+    animation: twist 2S;
+}
+
+@keyframes twist {
+    
+    10%{
+        transform: rotate(10deg);
+    }
+
+    30%{
+        transform: rotate(-10deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    70%{
+        transform: rotate(-10deg);
+    }
+
+    90%{
+        transform: rotate(10deg);
+    }
+}
+
+
+#centre{
+    align-items: center;
+    position: absolute;
+    background-color: grey;
+    border: 5px solid rgb(170, 170, 170);
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    top: 50%;
+    left: 42%; /*centered*/
+    box-shadow: rgb(50, 0, 0) 0px -60px 10px;    
+}
+
+#bas_gauche{
+    position: absolute;
+    background-color: grey;
+    border: 5px solid rgb(170, 170, 170);
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    top: 40%;
+    left: 25%;
+    box-shadow: rgb(50, 0, 0) 0px 45px 10px;
+}
+
+#bas_droit{
+    position: absolute;
+    background-color: grey;
+    border: 5px solid rgb(170, 170, 170);
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    top: 40%;
+    left: 66%;
+    box-shadow: rgb(50, 0, 0) 0px 45px 10px;
+}
+
+#haut_gauche{
+    position: absolute;
+    background-color: grey;
+    border: 5px solid rgb(170, 170, 170);
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    top: 20%;
+    left: 35%;
+    box-shadow: rgb(50, 0, 0) 0px 60px 10px;
+}
+
+#haut_droit{
+    position: absolute;
+    background-color: grey;
+    border: 5px solid rgb(170, 170, 170);
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    top: 20%;
+    left: 55%;
+    box-shadow: rgb(50, 0, 0) 0px 60px 10px;
+}
+
+#symbale_gauche{
+    position: absolute;
+    background-color: rgb(182, 182, 0);
+    border: 5px solid rgb(110, 110, 0);
+    width: 200px;
+    height: 50px;
+    border-radius: 1000px;
+    top: 10%;
+    left: 22%;
+    box-shadow: black 0px 20px 20px;
+}
+
+#symbale_droit{
+    position: absolute;
+    background-color: rgb(182, 182, 0);
+    border: 5px solid rgb(110, 110, 0);
+    width: 200px;
+    height: 50px;
+    border-radius: 1000px;
+    top: 10%;
+    left: 66%;
+    box-shadow: black 0px 20px 20px;
+}
+
+#symbale_bas_gauche{
+    position: absolute;
+    background-color: rgb(182, 182, 0);
+    border: 5px solid rgb(110, 110, 0);
+    width: 200px;
+    height: 50px;
+    border-radius: 1000px;
+    top: 20%;
+    left: 22%;
+    box-shadow: black 0px 20px 20px;
+}
+
+@media (max-width : 1300px){
+    *{
+        font-size: 3vw;
+    }
+
+    #centre{
+        left: 40%;
+    }
+
+    #bas_gauche{
+        left: 10%;
+    }
+
+    #bas_droit{
+        left: 80%;
+    }
+
+    #haut_gauche{
+        left: 25%;
+    }
+
+    #haut_droit{
+        left: 65%;
+    }
+
+    #symbale_gauche{
+        left: 5%;
+    }
+
+    #symbale_droit{
+        left: 80%;
+    }
+
+    #symbale_bas_gauche{
+        left: 5%;
+    }
+}
